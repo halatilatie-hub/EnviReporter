@@ -1,0 +1,97 @@
+.map-panel {
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  box-shadow: var(--shadow);
+}
+
+.map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.map-header h2 {
+  margin: 0;
+  font-size: 1.08rem;
+}
+
+.map-header span {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.map-surface-wrap {
+  position: relative;
+  flex: 1;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+.map-surface {
+  position: relative;
+  flex: 1;
+  min-height: 420px;
+  width: 100%;
+  background: linear-gradient(135deg, #dff6ff, #edf5ff);
+}
+
+.map-surface .leaflet-container {
+  width: 100%;
+  height: 100%;
+  background: #dfeefb;
+}
+
+.map-search-overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  z-index: 500;
+  display: flex;
+  gap: 0.7rem;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 14px;
+  padding: 0.6rem;
+  box-shadow: 0 10px 28px rgba(17, 38, 61, 0.12);
+}
+
+.map-search-overlay input {
+  flex: 1;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--panel-alt);
+  color: var(--text);
+  padding: 0.8rem 0.9rem;
+}
+
+.map-search-overlay button {
+  border: none;
+  background: var(--primary);
+  color: white;
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

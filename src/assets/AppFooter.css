@@ -1,0 +1,20 @@
+.app-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.4rem 1.5rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.app-footer p {
+  margin: 0;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.app-footer span {
+  font-size: 0.85rem;
+}
